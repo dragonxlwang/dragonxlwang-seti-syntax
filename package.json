@@ -1,7 +1,7 @@
 {
   "name": "dragonxlwang-seti-syntax",
   "theme": "syntax",
-  "version": "0.5.0",
+  "version": "0.5.1",
   "description": "Customized Seti Syntax - A subtle dark colored theme for Atom.",
   "repository": "https://github.com/dragonxlwang/dragonxlwang-seti-syntax",
   "license": "MIT",
