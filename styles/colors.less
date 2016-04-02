@@ -13,33 +13,50 @@
 @tomato: #FF6347;
 @one-dark-bg: hsl(220, 13%, 18%);
 
+@ghost-white: #F8F8F0;
+@light-ghost-white: #F8F8F2;
+@light-gray: #CCC;
+@gray: #888;
+@brown-gray: #49483E;
+@dark-gray: #282828;
+
+@monokai-yellow: #E6DB74;
+@monokai-blue: #66D9EF;
+@monokai-pink: #F92672;
+@monokai-purple: #AE81FF;
+@monokai-brown: #75715E;
+@monokai-orange: #FD971F;
+@monokai-light-orange: #FFD569;
+@monokai-green: #A6E22E;
+@monokai-sea-green: #529B2F;
+
 // GUTTER
 @gutter-text: darken(hsl(220, 14%, 71%), 16%);
 @gutter-text-highlight: @entity;
-@gutter-background: darken(@one-dark-bg, 5%);
-@gutter-background-highlight: rgb(6,7,8);
+@gutter-background: lighten(@dark-gray, 5%);
+@gutter-background-highlight: @brown-gray; // rgb(6,7,8);
 
 // CODE VIEW
-@code-background: @one-dark-bg; // editor background
+@code-background: @dark-gray; // @one-dark-bg; editor background
 @code-font: Source Code Pro;
-@code-font-color: #FAFAD2; // default editor text
+@code-font-color: @light-ghost-white; // #FAFAD2; default editor text
 
 // SYNTAX COLORS
-@comment: hsl(166, 30%, 50%); // comments, duhr.
+@comment: @monokai-brown; //hsl(166, 30%, 50%); // comments, duhr.
 @comment-bg: none; // comments, duhr.
 @comment-punc: @comment;
-@string: @blue; // 'value' of var='value', "name.png" or src="name.png"
+@string: @orange; // 'value' of var='value', "name.png" or src="name.png"
 @constant: @yellow1; // true of var x = true, {{}} of {{> hbs_include}}
 @constant-escape: @red; // true of var x = true, {{}} of {{> hbs_include}}
 @variable: @gold; // foo or function(foo), hbs_include of {{> hbs_include}}, http://dom.com/ of url(http://dom.com/)
 @support: @violet; // module of module.exports, color of color: rgb(0,0,0)
-@entity: @blue; // exports of module.exports, <div id= of <div id="#id">, . of .className
-@keyword: @orange; // = of var a = b, if of if a = b, px of font-size: 13px;
+@entity: @monokai-green; // exports of module.exports, <div id= of <div id="#id">, . of .className
+@keyword: @monokai-blue; // = of var a = b, if of if a = b, px of font-size: 13px;
 @control-keyword: #7CFC00;
 @operator-keyword: #FF4500;
 @support-function: #E066FF;
 @support-constant: #C6E2FF;
-@storage: @dorange; // var of var a = b;
+@storage: @monokai-pink; // @dorange; // var of var a = b;
 @meta: @code-font-color; // none of border: none;
 @function-param: @lime;
 
@@ -47,7 +64,7 @@
 
 @regex: @string;
 
-@numeric: @red;
+@numeric: @monokai-purple;
 @quotes: @code-font-color;
 
 @markup: @code-font-color;
@@ -58,12 +75,12 @@
 @guides: fade(hsl(220, 14%, 71%), 15%);
 @cursor-color: @code-font-color;
 @cursor-width: 2px;
-@selected: rgba(85, 218, 219, 0.2); // selected background color
+@selected: @brown-gray; // rgba(85, 218, 219, 0.2); // selected background color
 @selected-border: rgba(85,181,219,0.9);
 @selected-line: rgba(0,0,0,0.2);
 
 // HTML
-@tag: @blue;
+@tag: @monokai-pink;
 @tag-entity: @blue;
 @element-attr: @green;
 @class: @green;
